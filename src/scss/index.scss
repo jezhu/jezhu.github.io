@@ -1,0 +1,114 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+/* Main page background */
+html, body {
+  height: 100%;
+  background-image: url("../img/back.png");
+  background-size: cover;
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#userprofile {
+  padding: 50px 0px;
+
+  .container {
+    width: 430px;
+    height: 500px;
+  }
+}
+
+#portraitlogo {
+  width: 350px;
+  height: 350px;
+
+  border-radius: 100%;
+
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+/* Increases size for larger screens */
+@media screen and (min-width: 480px) {
+  #portraitlogo {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+#portraitlogo {
+  img {
+    width: 50%;
+    margin: 20% auto auto auto;
+  }
+}
+
+#usertext {
+  padding: 0px 20px;
+  color: white;
+}
+
+#typetext {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  font-family: "Courier";
+  font-size: 20px;
+  animation: type 4s steps(60, end);
+
+  span {
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes type {
+  from { width: 0; }
+  to { width: 100% }
+}
+
+@keyframes blink{
+  to{ opacity: .0; }
+}
+
+#nametext {
+  animation-delay: 10s;
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+#userlinks {
+  a img {
+    width: 10%;
+    display: inline-block;
+    margin: 10px auto 2px 2px;
+    opacity: 0.75;
+  }
+}
+
+#buttons {
+  /*text-align: center;*/
+  .btn {
+    color: white;
+    background-color: Transparent;
+    padding: 5px 5px;
+    margin: 15px 10px 10px 10px;
+    width: 100px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10em;
+  }
+}
+
+#bottom {
+  color: white;
+  padding: 20px 20px;
+}
